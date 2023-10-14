@@ -1,0 +1,112 @@
+CREATE DATABASE GBC_Superstore;
+USE GBC_Superstore;
+CREATE TABLE Customers (
+    CustomerID VARCHAR(50) PRIMARY KEY,
+    SegmentID INT(50),
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    FOREIGN KEY (SegmentID) REFERENCES Segment(SegmentID)
+);
+CREATE TABLE Segment(
+SegmentID INT AUTO_INCREMENT PRIMARY KEY,
+Segment VARCHAR(50)
+);
+CREATE TABLE Manager(
+ManagerID INT AUTO_INCREMENT PRIMARY KEY,
+FirstName VARCHAR(50),
+LastName VARCHAR(50)
+);
+CREATE TABLE Orders (
+OrderPID INT AUTO_INCREMENT PRIMARY KEY,
+OrderID VARCHAR(50),
+CustomerID VARCHAR(50),
+PostalCodeID INT(50) ,
+ShipModeID INT(50),
+OrderDate DATE,
+ShipDate DATE,
+Returned BOOL,
+FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+FOREIGN KEY (PostalCodeID) REFERENCES PostalCode(PostalCodeID),
+FOREIGN KEY (ShipModeID) REFERENCES ShipMode(ShipModeID)
+);
+CREATE TABLE ShipMode(
+ShipModeID INT AUTO_INCREMENT PRIMARY KEY,
+ShipMode VARCHAR(50)
+);
+
+CREATE TABLE PostalCode(
+PostalCodeID INT AUTO_INCREMENT PRIMARY KEY,
+CityID INT (50),
+PostalCode VARCHAR(50),
+FOREIGN KEY (CityID) REFERENCES City_in_state(CityID)
+);
+CREATE TABLE City_in_state(
+CityID INT AUTO_INCREMENT PRIMARY KEY,
+City CHAR (50),
+StateID INT(50),
+FOREIGN KEY (StateID) REFERENCES State(StateID)
+);
+CREATE TABLE State (
+StateID INT AUTO_INCREMENT PRIMARY KEY,
+RegionID INT(50),
+State CHAR (50),
+FOREIGN KEY (RegionID) REFERENCES Region(RegionID)
+);
+CREATE TABLE Region (
+RegionID INT AUTO_INCREMENT PRIMARY KEY,
+ManagerID INT (50),
+Region CHAR (50),
+FOREIGN KEY (ManagerID) REFERENCES Manager(ManagerID)
+);
+CREATE TABLE Product_Order (
+OrderPID INT,
+ProductPID INT,
+SALES FLOAT (50),
+Quantity INT (50),
+Discount FLOAT ,
+Profit Float,
+PRIMARY KEY (OrderPID, ProductPID),
+FOREIGN KEY (OrderPID) REFERENCES Orders(OrderPID),
+FOREIGN KEY (ProductPID) REFERENCES Product(ProductPID)
+);
+
+Create Table MetaData (
+CustomerID VARCHAR(50),
+OrderID VARCHAR(50),
+RegionID INT(50),
+Date DATE,
+Reason CHAR (100),
+Conditions CHAR (50),
+FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
+FOREIGN KEY (RegionID) REFERENCES Region(RegionID)
+);
+
+CREATE TABLE Product (
+ProductPID INT AUTO_INCREMENT PRIMARY KEY,
+ProductID VARCHAR(50),
+PrID INT(50),
+Sub_CategoryID VARCHAR(10),
+FOREIGN KEY (PrID) REFERENCES ProductReference(PrID),
+FOREIGN KEY (Sub_CategoryID) REFERENCES Sub_Category(Sub_CategoryID)
+);
+
+CREATE TABLE ProductReference(
+PRID INT AUTO_INCREMENT PRIMARY KEY,
+Cost double,
+Color VARCHAR(50),
+Description VARCHAR(50),
+ProductName VARCHAR(255)
+);
+
+CREATE TABLE Sub_Category(
+Sub_CategoryID VARCHAR(10) PRIMARY KEY,
+CategoryID VARCHAR(10),
+Sub_Category VARCHAR(50),
+FOREIGN KEY (CategoryID) REFERENCES Category(CategoryID)
+);
+
+CREATE TABLE Category(
+CategoryID VARCHAR(10) PRIMARY KEY,
+Category VARCHAR(50)
+);

@@ -1,0 +1,51 @@
+Region,Segment,Category,TotalOrders,OrderReturnPercentage,ProductsWithDiscount,TotalQuantity,TotalSales,TotalProfit,AverageTranscations
+Central,Consumer,Furniture,3,0,6,11,481.228,52.75019836,160.4093333
+Central,Consumer,Office Supplies,2,0,4,7,1101.632,-1847.226351,550.816
+Central,Consumer,Technology,1,0,9,9,431.928,64.78919983,431.928
+Central,Consumer,Subtotal,6,0,19,27,2014.788,-1729.686953,335.798
+Central,Corporate,Furniture,3,0,9,14,1927.152,217.6645889,642.384
+Central,Corporate,Office Supplies,8,0,38,38,1821.72,-111.4833007,227.715
+Central,Corporate,Technology,2,0,3,4,382.566,41.83710101,191.283
+Central,Corporate,Subtotal,13,0,50,56,4131.438,148.0183893,317.8029231
+Central,Home Office,Furniture,4,0,5,11,321.444,-56.54720211,80.361
+Central,Home Office,Office Supplies,8,0,22,29,886.362,131.9933941,110.79525
+Central,Home Office,Technology,2,0,3,5,776.596,199.3280106,388.298
+Central,Home Office,Subtotal,14,0,30,45,1984.402,274.7742026,141.743
+Central,Total,,33,0,99,128,8130.628,-1306.894361,246.3826667
+East,Consumer,Furniture,2,0,12,12,1706.196,287.917201,853.098
+East,Consumer,Office Supplies,26,0,31,94,2514.68,103.6422964,96.71846154
+East,Consumer,Technology,3,0,5,7,227.562,-47.6364001,75.854
+East,Consumer,Subtotal,31,0,48,113,4448.438,343.9230973,143.498
+East,Corporate,Furniture,1,0,3,3,658.746,146.3880005,658.746
+East,Corporate,Office Supplies,5,0,3,12,59.832,21.75930011,11.9664
+East,Corporate,Subtotal,6,0,6,15,718.578,168.1473006,119.763
+East,Home Office,Furniture,2,0,3,5,517.286,70.2198,258.643
+East,Home Office,Office Supplies,3,0,7,9,160.996,-89.63869834,53.66533333
+East,Home Office,Technology,1,0,0,3,89.97,37.78739929,89.97
+East,Home Office,Subtotal,6,0,10,17,768.252,18.36850095,128.042
+East,Total,,43,0,64,145,5935.268,530.4388989,138.0294884
+South,Consumer,Furniture,2,0,0,8,415.04,97.70959854,207.52
+South,Consumer,Office Supplies,6,0,7,26,531.018,164.6836996,88.503
+South,Consumer,Technology,3,0,4,12,324.688,141.1145983,108.2293333
+South,Consumer,Subtotal,11,0,11,46,1270.746,403.5078964,115.5223636
+South,Corporate,Furniture,1,0,5,5,79.12,13.84599972,79.12
+South,Corporate,Office Supplies,5,0,14,14,236.952,-19.60780072,47.3904
+South,Corporate,Subtotal,6,0,19,19,316.072,-5.761801004,52.67866667
+South,Home Office,Furniture,2,0,8,12,178.544,38.26959944,89.272
+South,Home Office,Office Supplies,5,0,4,17,278.086,-105.9542987,55.6172
+South,Home Office,Technology,4,0,8,16,1890.256,423.4124131,472.564
+South,Home Office,Subtotal,11,0,20,45,2346.886,355.7277139,213.3532727
+South,Total,,28,0,50,110,3933.704,753.4738093,140.4894286
+West,Consumer,Furniture,9,22.2222,29,37,4141.968,126.6206017,460.2186667
+West,Consumer,Office Supplies,30,13.3333,42,106,2124.228,467.0528992,70.8076
+West,Consumer,Technology,2,0,5,9,75.08,22.1182003,37.54
+West,Consumer,Subtotal,41,14.6341,76,152,6341.276,615.7917011,154.6652683
+West,Corporate,Furniture,3,0,9,11,163.416,28.26239967,54.472
+West,Corporate,Office Supplies,8,12.5,27,36,447.976,151.8790035,55.997
+West,Corporate,Technology,3,33.3333,3,11,10399.896,2775.968483,3466.632
+West,Corporate,Subtotal,14,14.2857,39,58,11011.288,2956.109886,786.5205714
+West,Home Office,Furniture,3,66.6667,17,17,2621.95,-658.2669764,873.9833333
+West,Home Office,Office Supplies,7,57.1429,17,20,483.965,32.41379881,69.13785714
+West,Home Office,Subtotal,10,60,34,37,3105.915,-625.8531775,310.5915
+West,Total,,65,21.5385,149,247,20458.479,2946.04841,314.7458308
+GrandTotal,,,169,8.284,362,630,38458.079,2923.066757,227.5625976
